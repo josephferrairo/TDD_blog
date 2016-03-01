@@ -1,4 +1,4 @@
-uard :minitest, spring: true, all_on_start: false do
+guard :minitest, spring: true, all_on_start: false do
 # with Minitest::Unit
 watch(%r{^test/(.*)\/?test_(.*)\.rb$})
 watch(%r{^lib/(.*/)?([^/]+)\.rb$}) { |m| "test/#{m[1]}test_#{m[2]}.rb" }
